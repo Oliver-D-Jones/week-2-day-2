@@ -4,6 +4,12 @@
 // output: ['is', 'a', 'split', 'sentence.', 'This']
 
 function rearranger(arr) {
+    let end = arr[arr.length-1];
+    let begin =arr[0];
+
+    arr.push(begin);
+    arr.shift(end);
+    return arr;
 }
 
 
@@ -16,6 +22,7 @@ function rearranger(arr) {
 // output: 42
 
 function largestNum(arr) {
+    return arr.sort((a,b) => b-a)[0];
 }
 
 
@@ -28,6 +35,7 @@ function largestNum(arr) {
 // output: [16, 8, 4, 28]
 
 function elemsTimesLength(arr) {
+   return arr.map(a=>a*arr.length);
 }
 
 
@@ -39,9 +47,12 @@ function elemsTimesLength(arr) {
 // input:  [[['legume'], 3, []], 2, ['tree', [{}, [5]]]]
 // output: ['legume', 3, 2, 'tree', 5]
 // Primitive data types - https://developer.mozilla.org/en-US/docs/Glossary/Primitive
-
+function flattenIt(value){
+    let flatArr = arr.valueOf();   
+}
 function arrayFlattener(arr) {
-
+//assume an array is passed
+    
 }
 
 
